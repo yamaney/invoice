@@ -81,6 +81,9 @@ public class InvoiceService {
 
 		// 請求書管理IDから請求書を取得する
 		Invoice invoice = invoiceRepository.findOne(invoiceNo);
+		if (invoice == null) {
+			return invoiceListResource;
+		}
 		// 請求書詳細取得用リスト
 		List<Invoice> invoiceList = new ArrayList<Invoice>();
 		// 請求書をリストに設定
