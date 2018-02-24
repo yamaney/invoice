@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/invoicedb?useSSL=false
+    username: root
+    password: invoicedb
+    driverClassName: com.mysql.jdbc.Driver
